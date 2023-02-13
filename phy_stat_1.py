@@ -11,6 +11,8 @@ n1 = 100
 n2 = 100
 
 ##Fonctions utiles
+def mu(k1,k2):
+    return math.comb(n1,k1)*exp(-b*k1*v1)*math.comb(n2,k2)*exp(-b*k2*v2)
 
 def partie_positive(a):
     return max(0,a)
@@ -32,7 +34,7 @@ def matrice_transition():
     M = np.zeros(k+1,k+1)
     for i in range(k+1):
         for j in range(k+1):
-            M[i][j] = X[i][j]
+            M[i][j] = X[i][0]*(1/2)*exp(partie_positive(psi_
         
         
             
