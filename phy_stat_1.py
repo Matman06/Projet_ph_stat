@@ -17,7 +17,7 @@ def partie_positive(a):
 
 def norme_VT():
 
-    def psi_1(k):
+def psi_1(k):
     return b*v1 + math.log(n1-k)
     
 def psi_2(k):
@@ -26,10 +26,12 @@ def psi_2(k):
 ##L'algorithme
 
 def matrice_transition():
-    X = [[3,0],[2,1],[1,2],[0,3]]
+    X = []
+    for i in range(k):
+        X.append([k-i,i])
     M = np.zeros(k+1,k+1)
     for s in range(k+1):
-        i = bern
+        
             
 
 def metropolis(beta,epsilon):
