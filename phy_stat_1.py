@@ -30,7 +30,10 @@ def matrice_transition():
     for i in range(k):
         X.append([k-i,i])
     M = np.zeros(k+1,k+1)
-    for s in range(k+1):
+    for i in range(k+1):
+        for j in range(k+1):
+            M[i][j] = X[i][j]
+        
         
             
 
