@@ -29,7 +29,7 @@ def psi_2(k):
 
 def matrice_transition():
     X = []
-    for i in range(k):
+    for i in range(k+1):
         X.append([k-i,i])
     M = np.zeros(k+1,k+1)
     for i in range(k+1):
