@@ -32,10 +32,12 @@ def matrice_transition():
     for i in range(k+1):
         X.append([k-i,i])
     M = np.zeros(k+1,k+1)
-    for i in range(k+1):
-        for j in range(k+1):
-            M[i][j] = X[i][0]*(1/2)*exp(partie_positive(psi_
-        
+    
+    for i in range(1,k):
+        M[i][i-1] = X[i][1]*(1/2)*exp(-partie_positive(psi_2(X[i][1]-psi_1(X[i][])))
+        M[i][i] = 
+        M[i][i+1] = X[i][
+                                                      
         
             
 
